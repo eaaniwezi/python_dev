@@ -8,9 +8,9 @@ driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 BASE_URL = "https://www.udemy.com/course/100-days-of-code/"
 
-MY_EMAIL = "eaaninwezi@gmail.com"
-MY_PASSWORD = "wdhaonwaatoffgzv"
-TO_EMAIL = "dorisfaki@gmail.com"
+MY_EMAIL = " "
+MY_PASSWORD = " "
+TO_EMAIL = " "
 
 driver.get(BASE_URL)
 driver.set_window_position(0, 0)

@@ -10,7 +10,7 @@ chrome_driver_path = "C:\pythonDev\chromedriver.exe"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 JOB_TITLE = "flutter"
-LOGIN_CRENDENTIAL = "+79509697254"
+LOGIN_CRENDENTIAL = "+ "
 SUCCESSFULLY_APPLIED_JOBS = []
 AVAILABLE_JOB_LIST = []
 Skillset = ['Bloc','Flutter','Solid', 'OOP', 'Git',  'Dart', 'Json', 'Rest', 'Android', 'Api', 'REST API']
