@@ -1,8 +1,11 @@
-from flask import Blueprint
+from flask import (render_template, url_for, flash,
+                   redirect, request, abort, Blueprint)
+from flask_login import current_user, login_required
+from flaskblog import db
+from flaskblog.models import Post
+from flaskblog.posts.forms import PostForm
 
-posts = Blueprint('users', __name__)
-
-
+posts = Blueprint('posts', __name__)
 
 
 @posts.route("/post/new", methods=['GET', 'POST'])
@@ -10,8 +13,7 @@ posts = Blueprint('users', __name__)
 def new_post():
     form = PostForm()
     if form.validate_on_submit():
-        post = Post(title=form.title.data,
-                    content=form.content.data, author=current_user)
+        post = Post(title=form.title.data, content=form.content.data, author=current_user)
         db.session.add(post)
         db.session.commit()
         flash('Your post has been created!', 'success')
@@ -56,8 +58,3 @@ def delete_post(post_id):
     db.session.commit()
     flash('Your post has been deleted!', 'success')
     return redirect(url_for('main.home'))
-
-
-
-
-
