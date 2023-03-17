@@ -10,7 +10,7 @@ chrome_driver_path = "C:\pythonDev\chromedriver.exe"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 JOB_TITLE = "flutter"
-LOGIN_CRENDENTIAL = "+ "
+LOGIN_CRENDENTIAL = "+"
 SUCCESSFULLY_APPLIED_JOBS = []
 AVAILABLE_JOB_LIST = []
 Skillset = ['Bloc','Flutter','Solid', 'OOP', 'Git',  'Dart', 'Json', 'Rest', 'Android', 'Api', 'REST API']
@@ -22,7 +22,7 @@ driver.set_window_size(1400, 1200)
 
 driver.find_element(By.XPATH, '//*[@id="HH-React-Root"]/div/div[2]/div/div/div/div/div[5]/a').click()
 driver.find_element(By.XPATH, '//*[@id="HH-React-Root"]/div/div[3]/div[1]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div/form/div[1]/fieldset/input').send_keys(LOGIN_CRENDENTIAL)
-driver.find_element(By.XPATH, '//*[@id="HH-React-Root"]/div/div[3]/div[1]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div/form/div[4]/button[1]').click()
+driver.find_element(By.XPATH, '//*[@id="HH-React-Root"]/div/div[3]/div[1]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[2]/div/form/div[5]/button[1]').click()
 time.sleep(60)
 
 
