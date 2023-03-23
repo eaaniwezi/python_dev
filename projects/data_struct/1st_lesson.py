@@ -57,9 +57,9 @@ large_test = {
         'query': 2
     },
     'output': 9999998
-    
-} 
 
+}
 
 evaluate_test_case(locate_card_binary_search, large_test)
 #! The time complexity of linear search is O(N) and its space complexity is O(1).
+#! The time complexity of binary search is O(logN) and its space complexity is O(1).
